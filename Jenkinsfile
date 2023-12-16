@@ -7,11 +7,12 @@ pipeline {
     agent any
 
     stages {
-        stage('Git checkout') {
+        stage('Git checkout') {   
             steps {
                 echo 'Cloning project codebase...'
                 git branch: 'main', url: 'https://github.com/tolaniba/devops-fully-automated-infra.git'
                 sh 'ls'
+                sh 'pwd'
             }
         }
         
