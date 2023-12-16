@@ -12,7 +12,6 @@ pipeline {
                 echo 'Cloning project codebase...'
                 git branch: 'main', url: 'https://github.com/tolaniba/devops-fully-automated-infra.git'
                 sh 'ls'
-                sh 'pwd'
             }
         }
         
